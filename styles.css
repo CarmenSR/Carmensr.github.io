@@ -131,3 +131,7 @@ border-radius: 150px 150px 150px 150px}
 .publicacion-container:nth-child(even){
   background-color: #f2f2f2;
 }
+
+.coment {
+  margin-left: 270px;
+}
