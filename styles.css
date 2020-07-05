@@ -37,6 +37,7 @@ line-height: 150px;
 #hnav{
   display: block;
   float: right;
+
   mangin-top: 0;
 }
 
@@ -143,6 +144,49 @@ border-radius: 150em 150em 150em 150em
 
 .coment {
   margin-left: 270px;
+}
+
+
+.contenido-publicacion img {
+  border: solid 1px;
+  border-radius: 1em 1em 1em 1em;
+
+
+}
+
+.pr {
+  width: 150px;
+}
+
+.ing {
+  text-align: center;
+
+}
+
+.contenido-publicaion li {
+  line-height: 200px;
+}
+
+.plupla {
+  display: block;
+margin: auto;
+text-align: center;
+width: 150px;
+}
+
+#aa{
+  max-width: 950px;
+}
+
+.iss {
+  display: block;
+  float: right;
+  width: 160px;
+  text-align: right;
+}
+
+.qq {
+  width: 250px;
 }
 
 
