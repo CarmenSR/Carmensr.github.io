@@ -158,10 +158,6 @@ border-radius: 150em 150em 150em 150em
   width: 150px;
 }
 
-.ing {
-  text-align: center;
-
-}
 
 .contenido-publicaion li {
   line-height: 200px;
@@ -187,4 +183,29 @@ width: 150px;
 
 .qq {
   width: 250px;
+}
+.rec{
+text-align: center;
+}
+.rec img {
+
+  border: 0px;
+  border-radius: 5px;
+}
+.vi{
+
+  width: 150px
+}
+
+table  {
+  padding: 10px;
+}
+.pluba {
+  width: 300px
+}
+.pla {
+  width: 150px
+}
+.plum {
+  width: 150px
 }
