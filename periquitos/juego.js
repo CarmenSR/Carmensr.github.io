@@ -1,4 +1,4 @@
-////Este codigo aún tiene errores y está en su etapa de desarrollo
+
 
 
 document.getElementById("t1").style.display = "none"
