@@ -2,5 +2,20 @@ td img{
   width: 400px
 }
 img{
-  width: 200px
+  width: 200px;
+}
+body {
+  background-color: lightblue;
+text-align: center}
+#atl {
+  width: 40px;
+};
+.inicio{
+  width: 100px
+};
+.final{
+  width: 0px
+};
+.animacion{
+  transition: all 10s ease .5s
 }
