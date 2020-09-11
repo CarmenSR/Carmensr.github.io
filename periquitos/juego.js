@@ -1,4 +1,4 @@
-document.getElementById("t1").style.display = "none"
+
 document.getElementById("w").style.display = "none"
 document.getElementById("e").style.display = "none"
 document.getElementById("b").style.display = "none"
@@ -26,7 +26,9 @@ function but1() {
 document.getElementById("bnv").innerHTML = "Genial! Ahora elige tu periquito"
 document.getElementById("buta").style.display = "none"
 document.getElementById("butb").style.display = "none"
-document.getElementById("t1").style.display = "block"
+document.getElementById("pa").style.display = "block"
+document.getElementById("pb").style.display = "block"
+document.getElementById("pc").style.display = "block"
 
 };
 function but2 () {
@@ -38,31 +40,34 @@ function but2 () {
 
 function el1 () {
   document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
+  document.getElementById("pb").style.display = "none"
+  document.getElementById("pc").style.display = "none"
   document.getElementById("bnv").style.display = "none"
   document.getElementById("e").style.display = "block"
   document.getElementById("b").style.display = "block"
-  document.getElementById("pb").style.display = "block"
+
 
 
 };
 function el2 () {
   document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
+  document.getElementById("pa").style.display = "none"
+  document.getElementById("pc").style.display = "none"
   document.getElementById("bnv").style.display = "none"
   document.getElementById("e").style.display = "block"
   document.getElementById("b").style.display = "block"
-  document.getElementById("pa").style.display = "block"
+
 
 
 };
 function el3 () {
   document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
+  document.getElementById("pa").style.display = "none"
+  document.getElementById("pb").style.display = "none"
   document.getElementById("bnv").style.display = "none"
   document.getElementById("e").style.display = "block"
   document.getElementById("b").style.display = "block"
-  document.getElementById("pc").style.display = "block"
+
 
 
 };
@@ -70,7 +75,13 @@ function butn() {
   var e = document.getElementById("e").value;
   var qb = document.getElementById("qb");
   document.getElementById("yt").style.display = "block";
-  document.getElementById("qb").innerHTML = "Que bonito nombre es " + e
+  document.getElementById("qb").innerHTML = "Que bonito nombre es " + e;
+  document.getElementById("nombre").innerHTML = document.getElementById("e").value;
+  if (e == ""){
+    document.getElementById("qb").innerHTML = "¡Vamos! Dale un nombre bonito"
+    document.getElementById("yt").style.display = "none";
+  }
+
 };
 function tank() {
 document.getElementById("yt").style.display = "none"
@@ -100,54 +111,57 @@ function oki() {
 document.getElementById("ma").onclick = function () { i+=40};
   let pro=document.querySelector("#pro");
               let i=100;
+              let y=0;
               let id=setInterval(function(){
                i-=20;
                   if(i>=0){
                       pro.value=i;
                   }
                   else{
-                      clearInterval(id);
+                      pra.value=y;
                   }
-              },6000);
+              },7500);
               document.getElementById("ma").onclick = function () { i+=40; document.getElementById("zz").style.display = "block";};
 
               setInterval (function() {
                  document.getElementById("zz").style.display = "none";
-             },10000)
+             },9000)
 };
 function queesesto() {
   document.getElementById("mi").onclick = function () { i+=40};
   let pra=document.querySelector("#pra");
               let i=100;
+              let y=0;
               let id=setInterval(function(){
                i-=20;
                   if(i>=0){
                       pra.value=i;
                   }
                   else{
-                      clearInterval(id);
+                      pra.value=y;
                   }
               },1000);
               document.getElementById("mi").onclick = function () { i+=40; document.getElementById("jj").style.display = "block";};
 
               setInterval (function() {
                  document.getElementById("jj").style.display = "none";
-              },10000)
+              },5000)
 };
 
 function elpo() {
   let pre=document.querySelector("#pre");
               var i=100;
+              let y=0;
               let id=setInterval(function(){
                i-=20;
                   if(i>=0){
                   pre.value=i}
                     else {
-                      clearInterval(id);
+                      pre.value=y;
 
                   }
 
-              },4000);
+              },10000);
 
 
   document.getElementById("me").onclick = function () { i+=40; document.getElementById("cm").style.display = "block";};
@@ -156,3 +170,8 @@ function elpo() {
      document.getElementById("cm").style.display = "none";
  },10000)
  };
+
+function ys(){
+  but1()
+  document.getElementById("yasi").style.display = "none"
+};
