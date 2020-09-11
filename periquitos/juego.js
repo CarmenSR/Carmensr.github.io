@@ -1,89 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Proyecto Juego</title>
+    <link rel="stylesheet" type="text/css" href="juego.css">
+  </head>
+  <body>
+    <div id="cent">
+    <p id="wa">Hambre</p> <button onclick="cosa()" id="ma">Dar de comer</button><progress value="100" max="100" id="pro"></progress>
+      <p id="we">Sueño</p> <button id="me" onclick="aaa()">Dormir</button><progress value="100" max="100" id="pre"></progress>
+        <p id="wi">Diversión</p> <button onclick="oocosa()" id="mi">Jugar con él</button><progress value="100" max="100" id="pra"></progress>
+    <p id="bnv"> ¡Bienvenido a la tienda de periquitos! ¿Quisiera adoptar un periquito? </p>
+    <button onclick="ys()" id="yasi">¡Ya si quiero adoptar!</button>
+<p id="w">Escribe un nombre bonito para tu periquito</p>
+<input type = "text" placeholder="Nombre" id ="e"></input><button onclick="butn()" id="b">Usar</button>
+    <img src ="p1.jpg" id="pa"/>
+    <img src ="p2.jpg" id="pb"/>
+    <img src ="p3.jpg" id="pc"/>
+    <img src = "zzz.png" id="cm"/>
+    <img src = "comer.jpg" id="zz"/>
+    <img src = "jugar.jpg" id="jj"/>
+    <p id ="qb"></p><button onclick="tank()" id="yt">Gracias :)</button>
+    <button onclick="oki()" id="ok">Ok</button>
+    <button onclick="but1()" id="buta">Sii :)</button>
+    <button onclick="but2()" id="butb">No todavía</button>
 
-
-
-document.getElementById("t1").style.display = "none"
-document.getElementById("w").style.display = "none"
-document.getElementById("e").style.display = "none"
-document.getElementById("b").style.display = "none"
-document.getElementById("pa").style.display = "none"
-document.getElementById("pb").style.display = "none"
-document.getElementById("pc").style.display = "none"
-document.getElementById("yt").style.display = "none"
-document.getElementById("ok").style.display = "none"
-document.getElementById("pro").style.display = "none"
-document.getElementById("pre").style.display = "none"
-document.getElementById("pra").style.display = "none"
-document.getElementById("yasi").style.display = "none"
-
-
-
-function but1() {
-document.getElementById("bnv").innerHTML = "Genial! Ahora elige tu periquito"
-document.getElementById("buta").style.display = "none"
-document.getElementById("butb").style.display = "none"
-document.getElementById("t1").style.display = "block"
-
-};
-function but2 () {
-  document.getElementById("bnv").innerHTML = "Bueno, vuelve cuando ya quieras adoptar alguno"
-  document.getElementById("buta").style.display = "none"
-  document.getElementById("butb").style.display = "none"
-  document.getElementById("yasi").style.display = "block"
-};
-
-function el1 () {
-  document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
-  document.getElementById("bnv").style.display = "none"
-  document.getElementById("e").style.display = "block"
-  document.getElementById("b").style.display = "block"
-  document.getElementById("pb").style.display = "block"
-
-
-};
-function el2 () {
-  document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
-  document.getElementById("bnv").style.display = "none"
-  document.getElementById("e").style.display = "block"
-  document.getElementById("b").style.display = "block"
-  document.getElementById("pa").style.display = "block"
-
-
-};
-function el3 () {
-  document.getElementById("w").style.display = "block"
-  document.getElementById("t1").style.display = "none"
-  document.getElementById("bnv").style.display = "none"
-  document.getElementById("e").style.display = "block"
-  document.getElementById("b").style.display = "block"
-  document.getElementById("pc").style.display = "block"
-
-
-};
-function butn() {
-  var e = document.getElementById("e").value;
-  var qb = document.getElementById("qb");
-  document.getElementById("yt").style.display = "block";
-  document.getElementById("qb").innerHTML = "Que bonito nombre es " + e
-};
-function tank() {
-document.getElementById("yt").style.display = "none"
-document.getElementById("e").style.display = "none"
-document.getElementById("w").style.display = "none"
-document.getElementById("b").style.display = "none"
-document.getElementById("ok").style.display = "block"
-document.getElementById("pro").style.display = "block"
-document.getElementById("pre").style.display = "block"
-document.getElementById("pra").style.display = "block"
-document.getElementById("qb").innerHTML = "Arriba tienes las barras de estatus de tu periquito, mantenlas lo mejor que puedas"
-};
-///function anime (){
-  ///document.getElementById("pro").classList.toggle ("final");
-
-function oki() {
-  document.getElementById("qb").style.display = "none"
-  document.getElementById("ok").style.display = "none"
-  ///anime()
-}
-
+    <table id ="t1">
+      <tr>
+        <td><img src ="periquitos.jpg" id="pri"/></td>
+      </tr>
+      <tr>
+        <td><button onclick="el1()" id="ela">Elegir 1</button><button onclick="el2()" id="elb">Elegir 2</button><button onclick="el3()" id="elc">Elegir 3</button></td>
+      </tr>
+        </table>
+</div>
+    <script src="juego.js"></script>
+  </body>
+  </html>
