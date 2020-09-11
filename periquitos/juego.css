@@ -4,9 +4,11 @@ td img{
 img{
   width: 200px;
 }
-body {
-  background-color: lightblue;
-text-align: center}
+body{background-color: lightblue}
+#cent{
+  ;
+width: 800px; margin: 0 auto;;
+}
 #atl {
   width: 40px;
 };
